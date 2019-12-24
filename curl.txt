@@ -1,0 +1,9 @@
+https://github.com/zc888168/security-oauth2
+
+ http://localhost:9090/oauth/authorize?response_type=code&client_id=merryyou&redirect_uri=http://merryyou.cn&scope=all
+
+
+curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d 'grant_type=authorization_code&code=lYYGVE&redirect_uri=http://merryyou.cn&scope=all' "http://merryyou:merryyou@localhost:9090/oauth/token"
+
+
+curl -X GET http://localhost:9090/user -H "Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE1NzcyMDg1NTUsImJsb2ciOiJodHRwczovL2xvbmdmZWl6aGVuZy5naXRodWIuaW8vIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6ImRlZGZlMzRlLTE0MzktNGFjZS05YzEwLWI2YTUxZmJiM2E1YSIsImNsaWVudF9pZCI6Im1lcnJ5eW91In0.niEAEuybSoJRSo8JHMRTSOV7znyCVQZxGsHqOrl8H-E"
